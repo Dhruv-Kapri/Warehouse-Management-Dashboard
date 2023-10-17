@@ -1,0 +1,36 @@
+/* Layout.module.css */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  height: 100vh;
+  /* grid-gap: 15px;
+  padding: 15px; */
+}
+
+.sideNav {
+  grid-column: 1/2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff; /* Set your preferred background color */
+}
+
+.content {
+  grid-column: 2/3;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  /* padding-left: 10px;
+  margin-left: 10px;
+  margin-top: 100px; Adjust this value as needed to create space for the top navbar */
+  height: 100vh; /* Set the height of the content area */
+}
+
+.outlet {
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+  margin: 0;
+  padding: 0 20px;
+  /* height: 100%; Allow the Outlet to take the full height of the content area */
+  /* padding: 10px; You can adjust the padding as needed */
+}

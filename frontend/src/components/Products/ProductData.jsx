@@ -1,0 +1,268 @@
+export const productData = [
+  {
+    name: "Maggi",
+    quantity: 20,
+    arrival: "2023-10-01",
+    dispatch: "2023-10-15",
+    status: "Arrival",
+  },
+  {
+    name: "Bru",
+    quantity: 50,
+    arrival: "2023-09-15",
+    dispatch: "2023-10-10",
+    status: "In-store",
+  },
+  {
+    name: "Coca-Cola",
+    quantity: 30,
+    arrival: "2023-10-05",
+    dispatch: "2023-10-20",
+    status: "Arrival",
+  },
+  {
+    name: "Lays",
+    quantity: 40,
+    arrival: "2023-10-03",
+    dispatch: "2023-10-18",
+    status: "In-store",
+  },
+  {
+    name: "Samsung TV",
+    quantity: 5,
+    arrival: "2023-10-07",
+    dispatch: "2023-10-22",
+    status: "In-store",
+  },
+  {
+    name: "iPhone 13",
+    quantity: 10,
+    arrival: "2023-09-28",
+    dispatch: "2023-10-13",
+    status: "Dispatched",
+  },
+  {
+    name: "Dell Laptop",
+    quantity: 8,
+    arrival: "2023-10-12",
+    dispatch: "2023-10-27",
+    status: "In-store",
+  },
+  {
+    name: "Sony Headphones",
+    quantity: 15,
+    arrival: "2023-10-10",
+    dispatch: "2023-10-25",
+    status: "Arrival",
+  },
+  {
+    name: "Nike Shoes",
+    quantity: 25,
+    arrival: "2023-10-14",
+    dispatch: "2023-10-29",
+    status: "In-store",
+  },
+  {
+    name: "LG Refrigerator",
+    quantity: 4,
+    arrival: "2023-10-08",
+    dispatch: "2023-10-23",
+    status: "Arrival",
+  },
+  {
+    name: "Pepsi",
+    quantity: 15,
+    arrival: "2023-10-06",
+    dispatch: "2023-10-21",
+    status: "In-store",
+  },
+  {
+    name: "Tide Detergent",
+    quantity: 60,
+    arrival: "2023-10-04",
+    dispatch: "2023-10-19",
+    status: "Dispatched",
+  },
+  {
+    name: "Apple MacBook Air",
+    quantity: 7,
+    arrival: "2023-10-09",
+    dispatch: "2023-10-24",
+    status: "In-store",
+  },
+  {
+    name: "Adidas Sneakers",
+    quantity: 18,
+    arrival: "2023-10-11",
+    dispatch: "2023-10-26",
+    status: "Arrival",
+  },
+  {
+    name: "LG Smartphones",
+    quantity: 30,
+    arrival: "2023-10-02",
+    dispatch: "2023-10-17",
+    status: "In-store",
+  },
+  {
+    name: "Dyson Vacuum Cleaner",
+    quantity: 12,
+    arrival: "2023-10-13",
+    dispatch: "2023-10-28",
+    status: "Arrival",
+  },
+  // Add more data objects with different status values
+];
+
+// const data = [
+//   {
+//     name: "Athena Weissnat",
+//     company: "Little - Rippin",
+//     email: "Elouise.Prohaska@yahoo.com",
+//   },
+//   {
+//     name: "Deangelo Runolfsson",
+//     company: "Greenfelder - Krajcik",
+//     email: "Kadin_Trantow87@yahoo.com",
+//   },
+//   {
+//     name: "Danny Carter",
+//     company: "Kohler and Sons",
+//     email: "Marina3@hotmail.com",
+//   },
+//   {
+//     name: "Trace Tremblay PhD",
+//     company: "Crona, Aufderhar and Senger",
+//     email: "Antonina.Pouros@yahoo.com",
+//   },
+//   {
+//     name: "Derek Dibbert",
+//     company: "Gottlieb LLC",
+//     email: "Abagail29@hotmail.com",
+//   },
+//   {
+//     name: "Viola Bernhard",
+//     company: "Funk, Rohan and Kreiger",
+//     email: "Jamie23@hotmail.com",
+//   },
+//   {
+//     name: "Austin Jacobi",
+//     company: "Botsford - Corwin",
+//     email: "Genesis42@yahoo.com",
+//   },
+//   {
+//     name: "Hershel Mosciski",
+//     company: "Okuneva, Farrell and Kilback",
+//     email: "Idella.Stehr28@yahoo.com",
+//   },
+//   {
+//     name: "Mylene Ebert",
+//     company: "Kirlin and Sons",
+//     email: "Hildegard17@hotmail.com",
+//   },
+//   {
+//     name: "Lou Trantow",
+//     company: "Parisian - Lemke",
+//     email: "Hillard.Barrows1@hotmail.com",
+//   },
+//   {
+//     name: "Dariana Weimann",
+//     company: "Schowalter - Donnelly",
+//     email: "Colleen80@gmail.com",
+//   },
+//   {
+//     name: "Dr. Christy Herman",
+//     company: "VonRueden - Labadie",
+//     email: "Lilyan98@gmail.com",
+//   },
+//   {
+//     name: "Katelin Schuster",
+//     company: "Jacobson - Smitham",
+//     email: "Erich_Brekke76@gmail.com",
+//   },
+//   {
+//     name: "Melyna Macejkovic",
+//     company: "Schuster LLC",
+//     email: "Kylee4@yahoo.com",
+//   },
+//   {
+//     name: "Pinkie Rice",
+//     company: "Wolf, Trantow and Zulauf",
+//     email: "Fiona.Kutch@hotmail.com",
+//   },
+//   {
+//     name: "Brain Kreiger",
+//     company: "Lueilwitz Group",
+//     email: "Rico98@hotmail.com",
+//   },
+//   {
+//     name: "Myrtice McGlynn",
+//     company: "Feest, Beahan and Johnston",
+//     email: "Julius_Tremblay29@hotmail.com",
+//   },
+//   {
+//     name: "Chester Carter PhD",
+//     company: "Gaylord - Labadie",
+//     email: "Jensen_McKenzie@hotmail.com",
+//   },
+//   {
+//     name: "Mrs. Ericka Bahringer",
+//     company: "Conn and Sons",
+//     email: "Lisandro56@hotmail.com",
+//   },
+//   {
+//     name: "Korbin Buckridge Sr.",
+//     company: "Mraz, Rolfson and Predovic",
+//     email: "Leatha9@yahoo.com",
+//   },
+//   {
+//     name: "Dr. Daisy Becker",
+//     company: "Carter - Mueller",
+//     email: "Keaton_Sanford27@gmail.com",
+//   },
+//   {
+//     name: "Derrick Buckridge Sr.",
+//     company: "O'Reilly LLC",
+//     email: "Kay83@yahoo.com",
+//   },
+//   {
+//     name: "Ernie Hickle",
+//     company: "Terry, O'Reilly and Farrell",
+//     email: "Americo.Leffler89@gmail.com",
+//   },
+//   {
+//     name: "Jewell Littel",
+//     company: "O'Connell Group",
+//     email: "Hester.Hettinger9@hotmail.com",
+//   },
+//   {
+//     name: "Cyrus Howell",
+//     company: "Windler, Yost and Fadel",
+//     email: "Rick0@gmail.com",
+//   },
+//   {
+//     name: "Dr. Orie Jast",
+//     company: "Hilll - Pacocha",
+//     email: "Anna56@hotmail.com",
+//   },
+//   {
+//     name: "Luisa Murphy",
+//     company: "Turner and Sons",
+//     email: "Christine32@yahoo.com",
+//   },
+//   {
+//     name: "Lea Witting",
+//     company: "Hodkiewicz Inc",
+//     email: "Ford_Kovacek4@yahoo.com",
+//   },
+//   {
+//     name: "Kelli Runolfsson",
+//     company: "Feest - O'Hara",
+//     email: "Dimitri87@yahoo.com",
+//   },
+//   {
+//     name: "Brook Gaylord",
+//     company: "Conn, Huel and Nader",
+//     email: "Immanuel77@gmail.com",
+//   },
+// ];

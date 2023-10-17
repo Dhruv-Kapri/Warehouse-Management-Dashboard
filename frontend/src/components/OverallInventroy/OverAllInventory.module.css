@@ -1,0 +1,60 @@
+.card {
+  background-color: var(--mantine-color-body);
+}
+
+.label {
+  font-family: Greycliff CF, var(--mantine-font-family);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.lead {
+  font-family: Greycliff CF, var(--mantine-font-family);
+  font-weight: 700;
+  font-size: rem(22px);
+  line-height: 1;
+}
+
+.content {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* margin-top: var(--mantine-spacing-md); */
+  /* margin-bottom: var(--mantine-spacing-md); */
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.inner {
+  display: flex;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    flex-direction: column;
+  }
+}
+
+.tasks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: var(--mantine-spacing-md);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    margin-right: 0;
+    margin-bottom: var(--mantine-spacing-md);
+  }
+}
+
+.ring {
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    justify-content: center;
+    margin-top: var(--mantine-spacing-md);
+  }
+}
