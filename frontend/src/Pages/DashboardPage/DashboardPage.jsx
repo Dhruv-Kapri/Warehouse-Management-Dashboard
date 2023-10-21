@@ -1,3 +1,5 @@
+import { barData, waveData } from "../../components/GraphCard/DataOptions";
+import GraphCard from "../../components/GraphCard/GraphCard";
 import {
   inventorySummaryData,
   productSummaryData,
@@ -24,16 +26,26 @@ const icons = {
 const DashboardPage = () => {
   return (
     <div>
-      <div className={classes.row}>
-        <Overview {...salesOverviewData} />
-        <Overview {...inventorySummaryData} />
+      <div className={classes.analysis}>
+        <div className={classes.flex}>
+          <Overview {...salesOverviewData} />
+        </div>
+        <div className={classes.flex}>
+          <Overview {...inventorySummaryData} />
+        </div>
+        <div className={classes.flex}>
+          <Overview {...purchaseOverviewData} />
+        </div>
+        <div className={classes.flex}>
+          <Overview {...productSummaryData} />
+        </div>
+        <div className={classes.flex}>
+          <GraphCard name="Sales & Purchase" data={barData} graphType="bar" />
+        </div>
+        <div className={classes.flex}>
+          <GraphCard name="Order Summary" data={waveData} graphType="wave" />
+        </div>
       </div>
-      <div className={classes.row}>
-        <Overview {...purchaseOverviewData} />
-        <Overview {...productSummaryData} />
-      </div>
-      {/* <Overview data={salesData} /> */}
-      {/* <Overview data={data} /> */}
     </div>
   );
 };

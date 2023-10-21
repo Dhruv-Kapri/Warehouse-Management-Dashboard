@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export const UserContext = createContext({});
 
-export function UserContextProvider({ children }) {
+const UserContextProvider = ({ children }) => {
   const [userInfo, setUserInfo] = useState({});
   const [activeTab, setActiveTab] = useState("dashboard");
 
@@ -19,9 +19,11 @@ export function UserContextProvider({ children }) {
       {children}
     </UserContext.Provider>
   );
-}
+};
 
 // Add PropTypes validation
 UserContextProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
+
+export default UserContextProvider;

@@ -1,6 +1,39 @@
-.row {
-  display: flex;
+.analysis {
+  display: grid;
+  /* width: 100%; */
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  grid-template-column: repeat(2, 1fr);
+  grid-template-row: repeat(3, 1fr);
+}
+
+.analysis .flex {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.analysis .flex:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.analysis .flex:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.analysis .flex:nth-child(3) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.analysis .flex:nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.analysis .flex:nth-child(5) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.analysis .flex:nth-child(6) {
+  grid-column: 2/3;
+  grid-row: 3/4;
 }

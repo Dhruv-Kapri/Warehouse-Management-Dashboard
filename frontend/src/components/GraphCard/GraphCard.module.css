@@ -1,0 +1,10 @@
+.root {
+  padding: calc(var(--mantine-spacing-xl) * 0.6);
+  /* max-height: calc(var(--mantine-spacing-xl) * 45); */
+  /* padding-left: calc(var(--mantine-spacing-xl) * 1.7); */
+}
+
+.heading {
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}

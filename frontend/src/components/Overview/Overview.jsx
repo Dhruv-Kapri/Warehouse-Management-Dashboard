@@ -6,8 +6,6 @@ import {
   IconDiscount2,
   IconReceipt2,
   IconCoin,
-  IconArrowUpRight,
-  IconArrowDownRight,
 } from "@tabler/icons-react";
 // import BarGraph from "./BarGraph";
 // import WaveGraph from "./WaveGraph";
@@ -20,51 +18,23 @@ const icons = {
 };
 
 const Overview = (props) => {
-  const { name, data, graphType } = props;
+  const { name, data } = props;
   const stats = data.map((stat) => {
     const Icon = icons[stat.icon];
-    const DiffIcon = stat.diff > 0 ? IconArrowUpRight : IconArrowDownRight;
 
     return (
       <Paper withBorder p="md" radius="md" key={stat.title}>
-        <Group justify="space-between">
-          <Text size="xs" c="dimmed" className={classes.title}>
-            {stat.title}
-          </Text>
-          <Icon className={classes.icon} size="1.4rem" stroke={1.5} />
+        <Group justify="space-between" className={classes.center}>
+          <Icon className={classes.icon} size="2.2rem" stroke={1.5} />
         </Group>
 
-        <Group align="flex-end" gap="xs" mt={25}>
-          {graphType !== undefined ? (
-            graphType === "bar" ? (
-              <div>
-                {/* <BarGraph data={[stat]} /> */}
-                <p>bar</p>
-              </div>
-            ) : (
-              <div>
-                {/* <WaveGraph data={[stat]} /> */}
-                <p>wave</p>
-              </div>
-            )
-          ) : null}
-        </Group>
-
-        <Group align="flex-end" gap="xs" mt={25}>
+        <Group align="flex-end">
           <Text size="md" c="dimmed" className={classes.value}>
             {stat.value}
           </Text>
-          {stat.diff !== undefined ? (
-            <Text
-              c={stat.diff > 0 ? "teal" : "red"}
-              fz="sm"
-              fw={500}
-              className={classes.diff}
-            >
-              <span>{stat.diff}%</span>
-              <DiffIcon size="1rem" stroke={1.5} />
-            </Text>
-          ) : null}
+          <Text size="xs" c="dimmed" className={classes.title} align="flex-end">
+            {stat.title}
+          </Text>
         </Group>
       </Paper>
     );
@@ -74,7 +44,7 @@ const Overview = (props) => {
 
   return (
     <div className={classes.root}>
-      <Text size="md" c="dimmed" className={classes.title}>
+      <Text size="md" c="dimmed" className={classes.heading}>
         {name}
       </Text>
       <SimpleGrid cols={col}>{stats}</SimpleGrid>
@@ -92,7 +62,6 @@ Overview.propTypes = {
       diff: PropTypes.number,
     })
   ).isRequired,
-  graphType: PropTypes.oneOf(["bar", "wave"]).isRequired,
 };
 
 export default Overview;

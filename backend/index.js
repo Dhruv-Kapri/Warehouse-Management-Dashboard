@@ -24,11 +24,13 @@ const secret = sec;
 // Middleware setup
 app.use(
   cors({
-    origin: FRONT_END_URL, 
+    origin: FRONT_END_URL,
+    // origin: "*",
     credentials: true,
+    optionsSuccessStatus: 200,
   })
 ); // Enable Cross-Origin Resource Sharing
-app.use(express.json())
+app.use(express.json());
 app.use(cookieParser());
 
 app.use(bodyParser.json()); // Parse JSON request bodies

@@ -1,11 +1,11 @@
-import { Autocomplete, Group, Burger, rem } from "@mantine/core";
+import { Autocomplete, Group, Burger, rem, Avatar } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconSearch } from "@tabler/icons-react";
 import classes from "./TopNav.module.css";
 
 const links = [
   { link: "#", label: "Notifications" },
-  { link: "/profile", label: "Profile" },
+  { link: "/profile", label: <Avatar radius="xl" /> },
 ];
 
 const TopNav = () => {
@@ -19,6 +19,7 @@ const TopNav = () => {
       onClick={(event) => event.preventDefault()}
     >
       {link.label}
+      
     </a>
   ));
 

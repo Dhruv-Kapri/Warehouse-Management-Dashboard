@@ -2,94 +2,94 @@ export const salesOverviewData = {
   name: "Sales OverView",
   data: [
     {
-      title: "New Users",
+      title: "sales",
       icon: "user",
-      value: "124",
+      value: "832",
       // diff: -5,
     },
     {
-      title: "Discounts",
+      title: "Revenue",
       icon: "discount",
-      value: "22",
-      diff: 8,
+      value: "18300",
+      // diff: 8,
     },
     {
-      title: "Earnings",
+      title: "Profit",
       icon: "coin",
       value: "760",
-      diff: 20,
+      // diff: 20,
     },
     {
-      title: "Earnings",
+      title: "Cost",
       icon: "coin",
       value: "760",
-      diff: 20,
+      // diff: 20,
     },
   ],
 };
 
 export const inventorySummaryData = {
-  name: "User Statistics",
+  name: "Inventory Summary",
   data: [
     {
-      title: "New Users",
+      title: "Quantity in hand",
       icon: "user",
       value: "124",
       // diff: -5,
     },
     {
-      title: "Discounts",
+      title: "To be received",
       icon: "discount",
       value: "22",
-      diff: 8,
+      // diff: 8,
     },
   ],
 };
 
 export const purchaseOverviewData = {
-  name: "Sales OverView",
+  name: "Purchase OverView",
   data: [
     {
-      title: "New Users",
+      title: "Purchase",
       icon: "user",
       value: "124",
       // diff: -5,
     },
     {
-      title: "Discounts",
+      title: "Cost",
       icon: "discount",
       value: "22",
-      diff: 8,
+      // diff: 8,
     },
     {
-      title: "Earnings",
+      title: "Cancel",
       icon: "coin",
       value: "760",
-      diff: 20,
+      // diff: 20,
     },
     {
-      title: "Earnings",
+      title: "Return",
       icon: "coin",
       value: "760",
-      diff: 20,
+      // diff: 20,
     },
   ],
 };
 
 export const productSummaryData = {
-  name: "User Statistics",
+  name: "Product Summary",
   data: [
     {
-      title: "New Users",
+      title: "Number of Suppliers",
       icon: "user",
       value: "124",
       // diff: -5,
     },
     {
-      title: "Discounts",
+      title: "Number of Categories",
       icon: "discount",
       value: "22",
-      diff: 8,
+      // diff: 8,
     },
   ],
 };
