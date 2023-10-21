@@ -4,8 +4,8 @@
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  grid-template-column: repeat(2, 1fr);
-  grid-template-row: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .analysis .flex {
