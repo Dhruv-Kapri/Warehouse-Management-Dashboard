@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
@@ -14,11 +14,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <MantineProvider defaultColorScheme="light">
       <UserContextProvider>
         <Provider store={store}>
-          <BrowserRouter>
-            {/* <HashRouter> */}
+          {/* <BrowserRouter> */}
+          <HashRouter>
             <App />
-            {/* </HashRouter> */}
-          </BrowserRouter>
+          </HashRouter>
+          {/* </BrowserRouter> */}
         </Provider>
       </UserContextProvider>
     </MantineProvider>
