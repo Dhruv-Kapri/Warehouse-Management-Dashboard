@@ -1,11 +1,12 @@
 .analysis {
   display: grid;
-  /* width: 100%; */
+  width: 100%;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-columns: 3fr 2fr; */
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(3, auto);
 }
 
 .analysis .flex {

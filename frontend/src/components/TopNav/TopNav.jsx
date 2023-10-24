@@ -2,6 +2,7 @@ import { Autocomplete, Group, Burger, rem, Avatar } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconSearch } from "@tabler/icons-react";
 import classes from "./TopNav.module.css";
+import LightDarkButton from "../LightDarkButton/LightDarkButton";
 
 const links = [
   { link: "#", label: "Notifications" },
@@ -19,7 +20,6 @@ const TopNav = () => {
       onClick={(event) => event.preventDefault()}
     >
       {link.label}
-      
     </a>
   ));
 
@@ -52,6 +52,7 @@ const TopNav = () => {
 
         <Group>
           <Group ml={50} gap={5} className={classes.links} visibleFrom="sm">
+            <LightDarkButton />
             {items}
           </Group>
         </Group>

@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import { Navigate } from "react-router-dom";
-import { UserContext } from "../components/UserContext";
 import baseUrl from "../baseUrl";
 import Login from "../components/LoginSignup/Login";
+import { UserContext } from "../components/UserContext";
 
 const LoginPage = () => {
   const { setUserInfo } = useContext(UserContext);
@@ -20,6 +20,7 @@ const LoginPage = () => {
         response.json().then((userInfo) => {
           setUserInfo(userInfo);
           setRedirect(true);
+          localStorage.setItem("isLoggedIn", "true");
         });
       } else {
         alert("Wrong credentials");

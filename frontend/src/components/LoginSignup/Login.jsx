@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
 import {
-  Paper,
-  TextInput,
-  PasswordInput,
-  Button,
-  Title,
-  Text,
   Anchor,
+  Button,
+  Paper,
+  PasswordInput,
+  Text,
+  TextInput,
+  Title,
 } from "@mantine/core";
+import PropTypes from "prop-types";
+import React from "react";
 import classes from "./LoginSignup.module.css";
 
 const LoginForm = ({ onLogin }) => {
